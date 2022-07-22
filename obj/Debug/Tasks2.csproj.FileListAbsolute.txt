@@ -1,0 +1,15 @@
+C:\CS\Tasks2\bin\Debug\Tasks2.exe.config
+C:\CS\Tasks2\bin\Debug\Tasks2.exe
+C:\CS\Tasks2\bin\Debug\Tasks2.pdb
+C:\CS\Tasks2\obj\Debug\Login.g.cs
+C:\CS\Tasks2\obj\Debug\App.g.cs
+C:\CS\Tasks2\obj\Debug\Tasks2_MarkupCompile.cache
+C:\CS\Tasks2\obj\Debug\Tasks2_MarkupCompile.lref
+C:\CS\Tasks2\obj\Debug\Login.baml
+C:\CS\Tasks2\obj\Debug\Tasks2.g.resources
+C:\CS\Tasks2\obj\Debug\Tasks2.Properties.Resources.resources
+C:\CS\Tasks2\obj\Debug\Tasks2.csproj.GenerateResource.cache
+C:\CS\Tasks2\obj\Debug\Tasks2.csproj.CoreCompileInputs.cache
+C:\CS\Tasks2\obj\Debug\Tasks2.exe
+C:\CS\Tasks2\obj\Debug\Tasks2.pdb
+C:\CS\Tasks2\obj\Debug\Tasks2.csprojAssemblyReference.cache
