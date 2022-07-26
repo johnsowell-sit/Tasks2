@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tasks2"
         mc:Ignorable="d"
-        Title="Login Screen
-        " Height="180" Width="400">
+        Title="Login Screen"
+        Height="180" Width="380">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="160"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="20"/>
         </Grid.ColumnDefinitions>
@@ -25,13 +25,12 @@
         </Grid.RowDefinitions>
         <Label Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold">Login User</Label>
         <Label Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontWeight="Bold">UserName:</Label>
-        <TextBox Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" FontSize="14" Name="txtUserName"/>
-        <Button Grid.Column="3" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Name="cmdEnter">Enter</Button>
+        <TextBox TabIndex="0" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" FontSize="14" FontWeight="Bold" Name="txtUserName" TextChanged="txtUserName_TextChanged"/>
+        <Button TabIndex="2" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Width="70"  Name="cmdEnter" Click="cmdEnter_Click">Enter</Button>
 
         <Label Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontWeight="Bold">Password:</Label>
-        <TextBox Grid.Column="2" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" FontSize="14" Name="txtPassword"/>
-        <Button Grid.Column="3" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Name="cmdCancel">Cancel</Button>
+        <PasswordBox TabIndex="1" Grid.Column="2" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" FontSize="14" Name="txtPassword"/>
+        <Button TabIndex="3" Grid.Column="3" Grid.Row="3" HorizontalAlignment="Center" Width="70" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Name="cmdCancel" Click="cmdCancel_Click">Cancel</Button>
         <Label Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" FontWeight="Bold" Name="lblError" Foreground="red" Visibility="Hidden">Incorrect Login And/Or UserName</Label>
-
     </Grid>
 </Window>

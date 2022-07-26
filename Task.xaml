@@ -5,10 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tasks2"
         mc:Ignorable="d"
-        Title="Task" Height="450" Width="800">
+        Title="Task" Height="500" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="20"/>
         </Grid.ColumnDefinitions>
@@ -25,8 +29,38 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
-
         </Grid.RowDefinitions>
+
+
+        <TextBlock Name="lblTaskNumber" Grid.Row="1" Grid.Column="1" FontSize="18" FontWeight="Bold" Text="Task"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Name="txtCaption" Width="750" TextChanged="txtCaption_TextChanged"/>
+
+        <Label Grid.Row="3" Grid.Column="1" FontSize="18" FontWeight="Bold">Description</Label>
+        <TextBox Grid.Row="4"  Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="750" Height="70" FontSize="14" Name="txtDescription" TextWrapping="Wrap"/>
+
+        <Label Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" FontSize="18" FontWeight="Bold">Due Date And Time</Label>
+
+        <Label Grid.Row="7" Grid.Column="1" FontSize="14" FontWeight="Bold">Month</Label>
+        <Label Grid.Row="7" Grid.Column="2" FontSize="14" FontWeight="Bold">Date</Label>
+        <Label Grid.Row="7" Grid.Column="3" FontSize="14" FontWeight="Bold">Year</Label>
+        <Label Grid.Row="7" Grid.Column="4" FontSize="14" FontWeight="Bold">Hour</Label>
+        <Label Grid.Row="7" Grid.Column="5" FontSize="14" FontWeight="Bold">Minute</Label>
+        <ComboBox Grid.Row="8" Grid.Column="1" FontSize="12" FontWeight="Bold" Name="cmbMonth"/>
+        <ComboBox Grid.Row="8" Grid.Column="2" FontSize="12" FontWeight="Bold" Name="cmbDate"/>
+        <ComboBox Grid.Row="8" Grid.Column="3" FontSize="12" FontWeight="Bold" Name="cmbYear"/>
+        <ComboBox Grid.Row="8" Grid.Column="4" FontSize="12" FontWeight="Bold" Name="cmbHour"/>
+        <ComboBox Grid.Row="8" Grid.Column="5" FontSize="12" FontWeight="Bold" Name="cmbMinute"/>
+
+        <Label Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="2" FontSize="18" FontWeight="Bold">Additional Notes</Label>
+        <TextBox Grid.Row="10"  Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="750" Height="70" FontSize="14" Name="txtNotes" TextWrapping="Wrap"/>
+
+        <Button Grid.Row="12" Grid.Column="1" Grid.ColumnSpan="2" FontSize="14" FontWeight="Bold" Name="cmdCompleteTask" Height="48" VerticalAlignment="Bottom" Click="cmdCompleteTask_Click">Complete Task</Button>
+        <Button Grid.Row="12" Grid.Column="4" Grid.ColumnSpan="2" FontSize="14" FontWeight="Bold" Name="cmdCancelTask" Click="cmdCancelTask_Click">Cancel Task</Button>
+
+        <Button Grid.Row="13" Grid.Column="1" Grid.ColumnSpan="5" FontSize="14" FontWeight="Bold" Name="cmdClose" Height="48" VerticalAlignment="Bottom" Click="cmdClose_Click">Save And Close</Button>
     </Grid>
 </Window>

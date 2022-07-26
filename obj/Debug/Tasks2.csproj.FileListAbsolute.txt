@@ -12,4 +12,16 @@ C:\CS\Tasks2\obj\Debug\Tasks2.csproj.GenerateResource.cache
 C:\CS\Tasks2\obj\Debug\Tasks2.csproj.CoreCompileInputs.cache
 C:\CS\Tasks2\obj\Debug\Tasks2.exe
 C:\CS\Tasks2\obj\Debug\Tasks2.pdb
-C:\CS\Tasks2\obj\Debug\Tasks2.csprojAssemblyReference.cache
+C:\CS\Tasks2\bin\Debug\EntityFramework.dll
+C:\CS\Tasks2\bin\Debug\EntityFramework.SqlServer.dll
+C:\CS\Tasks2\bin\Debug\System.Data.SQLite.dll
+C:\CS\Tasks2\bin\Debug\System.Data.SQLite.EF6.dll
+C:\CS\Tasks2\bin\Debug\System.Data.SQLite.Linq.dll
+C:\CS\Tasks2\bin\Debug\EntityFramework.xml
+C:\CS\Tasks2\bin\Debug\EntityFramework.SqlServer.xml
+C:\CS\Tasks2\bin\Debug\System.Data.SQLite.xml
+C:\CS\Tasks2\obj\Debug\Main.g.cs
+C:\CS\Tasks2\obj\Debug\Task.g.cs
+C:\CS\Tasks2\obj\Debug\Main.baml
+C:\CS\Tasks2\obj\Debug\Task.baml
+C:\CS\Tasks2\obj\Debug\Tasks2.csproj.CopyComplete
